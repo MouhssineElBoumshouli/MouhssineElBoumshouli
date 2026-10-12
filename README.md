@@ -2,59 +2,61 @@
 
 # Mouhssine El Boumshouli
 
-### AI Engineering Student · Full-Stack & AI Software Developer
+**Fourth-year AI engineering student · Software engineering & applied AI research**
 
-I build **end-to-end software systems** where solid engineering, data, and AI meet — from full-stack products and decision-support platforms to computer-vision research.
+I study artificial intelligence at **EIDIA, Université Euromed de Fès**, in Morocco. I build software and work on AI projects, with a focus on testing how well things actually work.
 
-Currently studying **Artificial Intelligence at EIDIA — Université Euromed de Fès**.
+**Looking for a Summer 2027 internship** in software engineering, AI engineering, or applied research.
 
-[Portfolio](https://mouhssineelboumshouli.github.io/mouhssine-portfolio/) · [LinkedIn](https://www.linkedin.com/in/mouhssine-bms/) · [Email](mailto:elboumshouli.mouhssine@gmail.com)
+[Portfolio](https://mouhssine-portfolio.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/mouhssine-bms/) · [Email](mailto:elboumshouli.mouhssine@gmail.com)
 
 </div>
 
 ---
-
-## What I focus on
-
-- **Full-stack engineering** — React, TypeScript, FastAPI, PostgreSQL, Docker
-- **Human-in-the-loop AI** — AI proposes, users review, deterministic software stays authoritative
-- **Computer vision & applied research** — image processing, geometric algorithms, evaluation and reproducibility
-- **Reliable software** — typed APIs, relational data models, automated tests, CI and reproducible environments
 
 ## Selected work
 
-| Project | What it does | Engineering highlights |
-| --- | --- | --- |
-| **[SmartImport](https://github.com/MouhssineElBoumshouli/smartimport-procurement)** | Decision-support platform for comparing international supplier quotations, basket completeness and landed costs. | React · TypeScript · FastAPI · PostgreSQL · Docker · PDF/XLSX ingestion · human-reviewed AI |
-| **[medskel](https://github.com/MouhssineElBoumshouli/medskel)** | Implementation and evaluation of a bisector-based skeletonization method for 2D medical images. | Python · OpenCV · Shapely · NumPy · geometric algorithms · reproducibility experiments |
-| **[UEMF Présence](https://github.com/MouhssineElBoumshouli/Student-Attendance-System)** | University attendance system with automated sessions, mobile check-in and anomaly review. | Next.js · TypeScript · PostgreSQL · Prisma · GPS verification · rotating HMAC-SHA256 QR tokens |
+### [DARE-Bench — how consistent are AI agents?](https://github.com/MouhssineElBoumshouli/dare-agent-reliability)
 
-### SmartImport — flagship project
+*AI agent evaluation · Python · Reproducible experiments*
 
-SmartImport turns heterogeneous supplier quotations into **completeness-aware, explainable comparisons** instead of blindly comparing raw totals.
+I wanted to know whether an AI agent would get the same answer if it tried the same data-science task several times. I tested **24 tasks**, with **5 fresh attempts per task** under two different turn limits: **240 runs** in total.
 
-It combines a React/TypeScript frontend, FastAPI backend, PostgreSQL persistence, deterministic multi-currency cost logic, staged PDF/XLSX ingestion and optional AI-assisted extraction/matching with human confirmation.
+Giving the agent five turns instead of three raised its pass rate from **34.2% to 50.0%**. But tasks with a mix of passes and failures also rose from **7 to 10 out of 24**. More turns helped it succeed more often, but did not make it more consistent in this experiment.
 
-Synthetic evaluation of the document/AI workflow reached **98.99% aggregate document-field F1**, **100% product-line extraction F1 on 23 tested lines**, and **92.31% top-1 matching on eligible unique-match cases**.
+### [SmartImport — comparing supplier quotations](https://github.com/MouhssineElBoumshouli/smartimport-procurement)
 
-→ **[Explore SmartImport](https://github.com/MouhssineElBoumshouli/smartimport-procurement)**
+*React · TypeScript · FastAPI · PostgreSQL · Docker*
 
-## Core stack
+During my 2026 internship, I built a platform to compare international supplier quotations. Quotes can contain different products, quantities, currencies, and extra costs, so comparing their totals alone can be misleading.
 
-`Python` · `TypeScript` · `JavaScript` · `C` · `C++` · `Java` · `SQL`
+SmartImport checks whether each offer covers what's needed, calculates costs using explicit assumptions, and lets users review AI-assisted document extraction before accepting it. Financial calculations stay in regular, testable code.
 
-`React` · `Next.js` · `FastAPI` · `SQLAlchemy` · `Pydantic` · `PostgreSQL` · `Prisma`
+### [medskel — testing a medical-image method](https://github.com/MouhssineElBoumshouli/medskel)
 
-`Docker` · `Nginx` · `Git/GitHub` · `Linux` · `pytest` · `Vitest` · `Ruff` · `mypy`
+*Python · Computer vision · Geometric algorithms · Research evaluation*
 
-`LLM integration` · `Human-in-the-loop AI` · `OpenCV` · `NumPy`
+I implemented a published method for finding the centerlines of shapes in medical images, then compared it with standard pixel thinning.
 
----
+On **28 retinal images** traced independently by two people, total vessel-length measurements varied about **3× less** between observers. There were trade-offs: the centerline positions were less stable, and the method took about **66× longer** to run.
 
-<div align="center">
+### [Recall — mobile transcription prototype](https://github.com/MouhssineElBoumshouli/recall)
 
-**Open to software engineering, AI engineering and applied research opportunities.**
+*React Native · Expo · TypeScript · SQLite · Speech AI*
 
-[Portfolio](https://mouhssineelboumshouli.github.io/mouhssine-portfolio/) · [LinkedIn](https://www.linkedin.com/in/mouhssine-bms/) · [GitHub](https://github.com/MouhssineElBoumshouli)
+I'm building a mobile app that records audio, shows live transcription, and saves recordings and transcripts locally. It can also turn processed transcripts into summaries, key points, and action items.
 
-</div>
+**Status:** Working prototype. It's not a finished or publicly launched product.
+
+## Tools I use
+
+- **Languages:** Python, TypeScript, JavaScript, SQL, C++
+- **Web and mobile:** React, Next.js, React Native, Expo, FastAPI
+- **Data and AI:** PostgreSQL, SQLite, NumPy, OpenCV, LLM APIs
+- **Development and testing:** Docker, Git, GitHub Actions, pytest, Vitest
+
+## Other work
+
+I also built [UEMF Présence](https://github.com/MouhssineElBoumshouli/Student-Attendance-System), a university attendance system with QR-based mobile check-in and an admin dashboard.
+
+More about my projects and experience is on my [portfolio](https://mouhssine-portfolio.vercel.app/).
