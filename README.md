@@ -16,6 +16,8 @@ Founder of **Convoroute LLC**, building embedded B2B AI chatbots for customer su
 - **Reliable software** — typed APIs, relational data models, automated tests, CI and reproducible environments
 
 ## Selected work
+| Project | What it is | Stack |
+| --- | --- | --- |
 | SmartImport | Decision-support platform for comparing international supplier quotations, basket completeness and landed costs. | React · TypeScript · FastAPI · PostgreSQL · Docker · PDF/XLSX ingestion · human-reviewed AI |
 | DARE-Bench | Reproducible study of LLM agent repeatability across 240 instruction-following runs. | Python · evaluation design · bootstrap confidence intervals |
 | medskel | Implementation and evaluation of a bisector-based skeletonization method for 2D medical images. | Python · OpenCV · Shapely · NumPy · geometric algorithms · reproducibility experiments |
